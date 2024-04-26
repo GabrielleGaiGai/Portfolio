@@ -1,0 +1,133 @@
+.header {
+    width: 100%;
+    /* Remains in the same position even when the page is scrolled */
+    position: fixed;
+    top: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--background-color-dark);
+}
+
+.nav {
+    height: var(--header-height-full);
+    display: flex;
+    /* Align flex items along the main axis of container */
+    justify-content: flex-end;
+    /* Align flex items along the cross axis of container*/
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 2.25rem;
+}
+
+.nav__link {
+    display: flex;
+    column-gap: .5rem;
+    flex-direction: column;
+    align-items: center;
+    color: var(--title-color);
+    transition: .3s;
+}
+
+.nav__link:hover {
+    color: var(--title-color-effect);
+}
+
+.nav__icon {
+    font-size: var(--h4-font-size);
+}
+
+.nav__text {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.nav__close,
+.nav__toggle {
+    display: none;
+}
+
+
+/* ================== Breakpoints ================== */
+/* Medium */
+@media screen and (max-width: 768px) {
+    .header {
+        bottom: 0;
+        top: auto;
+    }
+
+    .nav {
+        height: var(--header-height);
+    }
+
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color-dark);
+        padding: 1rem 1rem 4.5rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        transition: .3s;
+    }
+
+    .show-menu {
+        bottom: 0;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5rem;
+    }
+
+    .home {
+        grid-column: 2 / span 2;
+    }
+
+    .about,
+    .projects {
+        grid-column: 1 / span 2;
+    }
+
+    .skills,
+    .contact {
+        grid-column: 3 / span 2;
+    }
+
+    .nav__icon {
+        font-size: var(--h1-font-size);
+    }
+
+    .nav__text {
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: block;
+        position: absolute;
+        right: .75rem;
+        bottom: .75rem;
+        font-size: var(--h3-font-size);
+        cursor: pointer;
+        color: var(--title-color);
+    }
+
+    .hide-icon {
+        display: none;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 1rem 0 3.5rem;
+    }
+
+    .nav__list {
+        column-gap: 3.5rem;
+    }
+}
