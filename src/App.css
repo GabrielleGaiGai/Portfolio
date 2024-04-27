@@ -11,7 +11,8 @@
   --title-color-effect: rgba(108, 117, 125, .7);
   --text-color: #495057;
   --background-color-light: #fff;
-  --background-color-dark: rgba(233, 236, 239, 1);
+  --background-color-medium: hsl(0, 0%, 98%);
+  --background-color-dark: rgba(233, 236, 239);
 
   /* Font and font size */
   --body-font: "Poppins", sans-serif;
@@ -30,16 +31,6 @@
   --font-medium: 500;
   --font-semi-bold: 550;
   --font-bold: 600;
-
-  /* Margin */
-  --m-0-25: 0.25rem;
-  --m-0-5: 0.5rem;
-  --m-0-75: 0.75rem;
-  --m-1: 1rem;
-  --m-1-5: 1.5rem;
-  --m-2: 2rem;
-  --m-2-5: 2.5rem;
-  --m-3: 3rem;
 
   /* z index */
   --z-tooltip: 10;
@@ -110,6 +101,7 @@ textarea {
 body {
   /* margin-top: var(--header-height-full); */
   color: var(--text-color);
+  background-color: var(--background-color-medium);
 }
 
 h1,
@@ -150,13 +142,14 @@ img {
 
 /* A portion that groups related content together */
 .section {
-  padding: 3rem 0 3rem;
+  padding: 3rem 0 6rem;
 }
 
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .section__subtitle {
@@ -170,11 +163,11 @@ img {
 .button {
   display: inline-block;
   background-color: var(--title-color);
-  color: var(--background-color-light);
+  color: var(--background-color-medium);
   padding: .75rem .75rem;
   border-radius: .5rem;
   font-size: var(--h4-font-size);
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-medium);
 }
 
 .button:hover {
@@ -183,7 +176,7 @@ img {
 
 .button__icon {
   font-size: var(--h3-font-size);
-  margin-left: var(--m-0-25);
+  margin-left: 0.25rem;
 }
 
 .button--flex {
@@ -226,7 +219,6 @@ img {
 /* Small */
 @media screen and (max-width: 350px) {
   .container {
-    margin-left: var(--m-1);
-    margin-right: var(--m-1);
+    max-width: 92%;
   }
 }

@@ -1,0 +1,124 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__CV {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 5rem;
+}
+
+.about__title {
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1rem;
+}
+
+/* ================== Publification ================== */
+.about__publification {
+    background-color: var(--background-color-light);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    align-self: start;
+}
+
+.pub__item {
+    margin-bottom: 2rem;
+}
+
+.pub__link:hover {
+    text-decoration: underline;
+    color: var(--title-color);
+}
+
+.item__title {
+    color: var(--title-color);
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.item__author {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+.item__publisher {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
+
+
+/* ================== Qualification ================== */
+.about__qualification {
+    align-self: start;
+    padding-top: 1rem;
+}
+
+.qual__tabs {
+    display: flex;
+    justify-content: center;
+    column-gap: 28%;
+    align-items: flex-start;
+}
+
+.qual__container {
+    display: grid;
+    grid-template-columns: 0.95fr;
+    justify-content: center;
+}
+
+.qual__data {
+    display: grid;
+    grid-template-columns: 0.8fr max-content 1fr;
+    column-gap: 1.5rem;
+    color: var(--title-color);
+    padding-bottom: .5rem;
+}
+
+.qual__data__title {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.qual__data__ins,
+.qual__data__date {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    display: flex;
+    column-gap: .35rem;
+}
+
+.qual_timeline {
+    display: flex;
+    align-items: center;
+}
+
+.qual__rounder {
+    width: 12px;
+    height: 12px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+.qual__line {
+    width: 1px;
+    height: 120%;
+    background-color: var(--text-color);
+    transform: translate(-6px, 0px);
+}
+
+/* ================== Breakpoints ================== */
+/* Large */
+@media screen and (max-width: 992px) {
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+}

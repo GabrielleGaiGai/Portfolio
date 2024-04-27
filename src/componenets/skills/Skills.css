@@ -1,0 +1,72 @@
+.skills__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+}
+
+.skill__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color-light);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 2rem 0 4rem;
+}
+
+.skill__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2rem;
+}
+
+.skill__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: .75rem;
+    column-gap: 2rem;
+    width: 85%;
+}
+
+.skill__data {
+    display: flex;
+    column-gap: .5rem;
+    color: var(--title-color);
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+/* ================== Breakpoints ================== */
+/* LLarge */
+@media screen and (max-width: 1440px) {
+    .skill__content{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large */
+@media screen and (max-width: 992px) {
+    .skills__container {
+        column-gap: 2rem;
+    }
+
+    .skill__title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills__container {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .skill__box {
+        padding: 1rem 0 2rem;
+    }
+
+    .skill__content{
+        grid-template-columns: 1fr 1fr;
+    }
+}

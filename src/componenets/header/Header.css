@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     z-index: var(--z-fixed);
-    background-color: var(--background-color-dark);
+    background-color: var(--background-color-medium);
 }
 
 .nav {
@@ -35,7 +35,7 @@
 }
 
 .nav__icon {
-    font-size: var(--h4-font-size);
+    font-size: var(--h3-font-size);
 }
 
 .nav__text {
@@ -66,7 +66,7 @@
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: var(--background-color-dark);
+        background-color: var(--background-color-medium);
         padding: 1rem 1rem 4.5rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         transition: .3s;
@@ -79,7 +79,8 @@
     .nav__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        column-gap: 5rem;
+        column-gap: 2rem;
+        row-gap: .5rem;
     }
 
     .home {
