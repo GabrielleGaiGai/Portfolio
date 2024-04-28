@@ -8,7 +8,7 @@ function Skills() {
 
       <div className="skills__container container">
 
-        <div className="skill__box">
+        <div className="skill__box box">
           <h3 className="skill__title">
             Programming
           </h3>
@@ -49,7 +49,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="skill__box">
+        <div className="skill__box box">
           <h3 className="skill__title">
             Framework
           </h3>
@@ -75,7 +75,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="skill__box">
+        <div className="skill__box box">
           <h3 className="skill__title">
             Developer Tools
           </h3>
