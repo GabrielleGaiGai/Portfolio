@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f9e0436e.css",
+    "main.js": "/portfolio/static/js/main.3f0e8ffe.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.bf584e5989520219889d.jpg",
+    "static/media/CV.pdf": "/portfolio/static/media/CV.7c5b90309f7dbffd3a3e.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.f9e0436e.css.map": "/portfolio/static/css/main.f9e0436e.css.map",
+    "main.3f0e8ffe.js.map": "/portfolio/static/js/main.3f0e8ffe.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9e0436e.css",
+    "static/js/main.3f0e8ffe.js"
+  ]
+}
