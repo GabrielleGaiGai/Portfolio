@@ -6,6 +6,7 @@ import About from './componenets/about/About';
 import Skills from './componenets/skills/Skills';
 import Projects from './componenets/projects/Projects';
 import Contact from './componenets/contact/Contact';
+import Footer from './componenets/footer/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
       </main>
     </>
   );
