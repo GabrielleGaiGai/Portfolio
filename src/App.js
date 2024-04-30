@@ -5,6 +5,7 @@ import Home from './componenets/home/Home';
 import About from './componenets/about/About';
 import Skills from './componenets/skills/Skills';
 import Projects from './componenets/projects/Projects';
+import Contact from './componenets/contact/Contact';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </main>
     </>
   );

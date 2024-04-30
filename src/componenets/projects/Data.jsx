@@ -11,10 +11,10 @@ export const projectsData = [
     {
         name: "Portfolio Website",
         language: "JavaScript, HTML/CSS",
-        tools: "React",
+        tools: "React, EmailJS",
         intro: "A front-end website",
-        description: "A front end-website",
+        description: "A responsive front end-website",
         source_code_link: "https://github.com/GabrielleGaiGai/portfolio",
-        demo_link: ""
+        demo_link: "https://gabriellegaigai.github.io/portfolio/"
     }
 ]

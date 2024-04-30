@@ -76,6 +76,10 @@
     column-gap: 2rem;
 }
 
+.home__buttons a:hover i {
+    transform: translate(.15rem, -.15rem) scale(1.2);
+}
+
 
 /* ================== Breakpoints ================== */
 /* Large */

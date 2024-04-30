@@ -1,0 +1,143 @@
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15%;
+}
+
+.contact__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+}
+
+.contact__card {
+    background-color: var(--background-color-light);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__logo {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
+
+.contact__method {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin-bottom: .5rem;
+}
+
+.contact__detail {
+    margin-bottom: 2rem;
+}
+
+.contact__link {
+    color: var(--title-color);
+    font-size: var(--h4-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.contact__link:hover {
+    color: var(--title-color-effect);
+}
+
+.contact__link:hover .contact__icon {
+    transform: translate(.25rem) scale(1.2);
+}
+
+.contact__icon {
+    font-size: var(--h3-font-size);
+}
+
+.contact__form {
+    display: grid;
+    align-items: start;
+    width: 100%;
+    grid-template-columns: 1fr;
+    height: 100%;
+    row-gap: 1rem;
+}
+
+.contact__form textarea {
+    resize: none;
+}
+
+.contact__box__pair {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact__box__tag {
+    font-size: var(--normal-font-size);
+}
+
+.contact__box__input {
+    background-color: var(--background-color-light);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: .75rem 1rem;
+}
+
+.contact__send {
+    padding: 1.25rem 2.5rem;
+    width: fit-content;
+    font-size: var(--h3-font-size);
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.contact__send:hover i {
+    transform: translate(.25rem) scale(1.2);
+}
+
+.contact__send__success {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: var(--z-project);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-message{
+    visibility: visible;
+}
+
+.contact__send__box {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--background-color-light);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__send__message {
+    font-size: var(--h3-font-size);
+    text-align: center;
+}
+
+/* ================== Breakpoints ================== */
+/* Medium */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+  }

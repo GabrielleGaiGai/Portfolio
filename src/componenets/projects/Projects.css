@@ -38,6 +38,10 @@
     color: var(--title-color-effect)
 }
 
+.projectItem__more:hover .projectItem__icon{
+    transform: translate(.25rem) scale(1.2);
+}
+
 .projectItem__icon {
     font-size: var(--h3-font-size);
 }

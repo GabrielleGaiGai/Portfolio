@@ -21,6 +21,10 @@
     margin-bottom: 1rem;
 }
 
+.about__CV a:hover i {
+    transform: translate(0, .25rem) scale(1.1);
+}
+
 /* ================== Publification ================== */
 .about__publification {
     align-self: start;
