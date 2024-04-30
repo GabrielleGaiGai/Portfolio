@@ -1,3 +1,6 @@
+.projects {
+    scroll-margin-top: var(--header-height-full);
+}
 .projects__container {
     display: grid;
     grid-template-columns: repeat(2, 40%);

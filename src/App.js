@@ -7,6 +7,7 @@ import Skills from './componenets/skills/Skills';
 import Projects from './componenets/projects/Projects';
 import Contact from './componenets/contact/Contact';
 import Footer from './componenets/footer/Footer';
+import Scrollup from './componenets/scrollup/Scrollup';
 
 
 function App() {
@@ -19,8 +20,10 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <Footer />
+
       </main>
+      <Footer />
+      <Scrollup />
     </>
   );
 }

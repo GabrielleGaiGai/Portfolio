@@ -1,3 +1,7 @@
+.skills {
+    scroll-margin-top: var(--header-height-full);
+}
+
 .skills__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

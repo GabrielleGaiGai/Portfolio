@@ -1,0 +1,60 @@
+.scrollup {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    background-color: var(--title-color);
+    border-radius: 0.45rem;
+    height: 3rem;
+    width: 3rem;
+    z-index: var(--z-tooltip);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.scrollup:hover {
+    background-color: var(--title-color-effect);
+}
+
+.show-scroll {
+    visibility: visible;
+}
+
+.scrollup__icon {
+    font-size: 2rem;
+    color: var(--background-color-light);
+}
+
+/* ================== Breakpoints ================== */
+/* Large */
+@media screen and (max-width: 992px) {
+    .scrollup {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    .scrollup__icon {
+        font-size: 1.75rem;
+    }
+}
+
+/* Medium */
+@media screen and (max-width: 768px) {
+    .scrollup {
+        bottom: 3rem;
+        right: 1rem;
+    }
+}
+
+/* Medium */
+@media screen and (max-width: 350px) {
+    .scrollup {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .scrollup__icon {
+        font-size: 1rem;
+    }
+}

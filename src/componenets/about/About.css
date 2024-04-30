@@ -1,3 +1,7 @@
+.about {
+    scroll-margin-top: var(--header-height-full);
+}
+
 .about__container {
     display: grid;
     grid-template-columns: 4fr 7fr;
