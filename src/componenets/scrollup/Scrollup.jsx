@@ -13,7 +13,7 @@ function Scrollup() {
     });
 
     return (
-        <a href="/#" className="scrollup" id='scrollup'>
+        <a href="https://gabriellegaigai.github.io/portfolio/#" className="scrollup" id='scrollup'>
             <i className="uil uil-angle-double-up scrollup__icon"></i>
         </a>
     )

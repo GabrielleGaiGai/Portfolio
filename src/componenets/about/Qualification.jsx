@@ -27,7 +27,7 @@ function Qualification() {
               Master of Applied Science in Electrical and Computer Engineering
             </span>
             <div className="qual__data__date">
-              <i class="uil uil-calender"></i> Sep 2022 - Jun 2024 (Expected)
+              <i class="uil uil-calender"></i> Sep 2022 - Apr 2024
             </div>
           </div>
         </div>
