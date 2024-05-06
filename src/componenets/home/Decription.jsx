@@ -10,7 +10,7 @@ function Decription() {
             </h1>
 
             <h3 className="home__subtitle">
-                Soft Engineer, Front End & Back End Developer
+                Software Engineer, Front End & Back End Developer
             </h3>
 
             <div className="home__buttons">

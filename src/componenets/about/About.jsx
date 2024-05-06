@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 import Qualification from './Qualification'
 import Publification from './Publification'
-import CV from '../../assets/CV.pdf'
+import CV from '../../assets/Resume.pdf'
 
 
 function About() {

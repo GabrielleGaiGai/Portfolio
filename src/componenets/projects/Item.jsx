@@ -1,15 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-function validate_link(link, title) {
+function validate_link(link, ref) {
     if (link.length === 0) {
         return (<></>)
     } else {
-        return (
-            <a href={link} className="projectItem__link" target="_blank" rel="noopener noreferrer">
-                {title}
-                <i className="uil uil-arrow-right projectItem__icon"></i>
-            </a>
-        )
+        if (ref.includes("github")) {
+            return (
+                <a href={link} className="projectItem__link" target="_blank" rel="noopener noreferrer">
+                    <i class="uil uil-github"></i>
+                </a>
+            )
+        } else {
+            return (
+                <a download="Simualtor" href={link} className="projectItem__link">
+                    <i class="uil uil-paperclip"></i>
+                </a>)
+        }
+
     }
 }
 
@@ -29,10 +36,21 @@ function Item({ item }) {
         document.body.addEventListener('click', clickAnyelse);
     }, [])
 
+    useEffect(() => {
+        const html = document.getElementsByTagName('html')[0]
+        if (toggleState) {
+            html.classList.add('lock-scroll')
+        } else {
+            html.classList.remove('lock-scroll')
+        }
+    }, [toggleState])
+
     return (
         <div className="projectItem box">
             <h3 className="projectItem__title">
-                {item.name}
+                {validate_link(item.source_code_link, "github")}
+                {validate_link(item.demo_link, "paper")}
+                <h4> {item.name} </h4>
             </h3>
             <div className="projectItem__intro">
                 {item.intro}
@@ -54,7 +72,7 @@ function Item({ item }) {
                             <div className="projectItem__key">
                                 Language(s):
                             </div>
-                            <div className="projectItem_content">
+                            <div className="projectItem__content">
                                 {item.language}
                             </div>
                         </div>
@@ -63,7 +81,7 @@ function Item({ item }) {
                             <div className="projectItem__key">
                                 Tool(s):
                             </div>
-                            <div className="projectItem_content">
+                            <div className="projectItem__content">
                                 {item.tools}
                             </div>
                         </div>
@@ -72,14 +90,13 @@ function Item({ item }) {
                             <div className="projectItem__key">
                                 Description:
                             </div>
-                            <div className="projectItem_content">
-                                {item.description}
+                            <div className="projectItem__content">
+                                <ul>
+                                    {item.description.map((item) => (
+                                        <li>{item}</li>
+                                    ))}
+                                </ul>
                             </div>
-                        </div>
-
-                        <div className="projectItem__links">
-                            {validate_link(item.source_code_link, "Source Code")}
-                            {validate_link(item.demo_link, "Demo")}
                         </div>
 
                     </div>

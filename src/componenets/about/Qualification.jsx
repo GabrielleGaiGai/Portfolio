@@ -37,7 +37,7 @@ function Qualification() {
             <div className='qual__data__title'>Web Developer Intern</div>
             <div className="qual__data__ins">
               <i class="uil uil-map-marker"></i>
-              Chengdu Daaisi Electronics Co., Ltd.
+              Daaisi Electronics Co., Ltd., Chengdu
             </div>
             <div className="qual__data__date">
               <i class="uil uil-calender"></i> Jul 2021 – Aug 2021
@@ -55,7 +55,7 @@ function Qualification() {
             <div className='qual__data__title'>Mobile Test Engineer Intern</div>
             <div className="qual__data__ins">
               <i class="uil uil-map-marker"></i>
-              Dayforce
+              Dayforce, Toronto
             </div>
             <div className="qual__data__date">
               <i class="uil uil-calender"></i> May 2019 – Aug 2019, Jan 2020 – Apr 2020
@@ -73,7 +73,7 @@ function Qualification() {
             <div className='qual__data__title'>Data Scientist Intern</div>
             <div className="qual__data__ins">
               <i class="uil uil-map-marker"></i>
-              MindBeacon
+              MindBeacon, Toronto
             </div>
             <div className="qual__data__date">
               <i class="uil uil-calender"></i> Sep 2018 – Dec 2018

@@ -34,7 +34,7 @@
 }
 
 .footer__social-icon {
-    color: var(--text-color);
+    color: var(--title-color);
     font-size: 2rem;
 }
 

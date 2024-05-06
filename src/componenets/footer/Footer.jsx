@@ -27,17 +27,14 @@ function Footer() {
                 </ul>
 
                 <div className="footer__social">
-                    <a href="http://linkedin.com/" className="footer__social-icon" target="_blank" rel="noopener noreferrer">
+                    <a href="http://linkedin.com/in/gabrielle-lu-6ba542165/" className="footer__social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="uil uil-linkedin"></i>
                     </a>
 
-                    <a href="http://github.com/" className="footer__social-icon" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/GabrielleGaiGai" className="footer__social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="uil uil-github-alt"></i>
                     </a>
 
-                    <a href="http://www.instagram.com" className="footer__social-icon" target="_blank" rel="noopener noreferrer">
-                        <i class="uil uil-instagram"></i>
-                    </a>
                 </div>
             </div>
         </footer>

@@ -41,8 +41,6 @@
 /* Large */
 @media screen and (max-width: 992px) {
   :root {
-    --header-height-full: 0;
-
     --big-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -57,6 +55,8 @@
 /* Medium */
 @media screen and (max-width: 768px) {
   :root {
+    --header-height-full: 0;
+    
     --big-font-size: 2rem;
     --h1-font-size: 1.25rem;
     --h2-font-size: 1rem;
