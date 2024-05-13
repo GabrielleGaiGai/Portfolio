@@ -1,27 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6fbdc45f.chunk.css",
-    "main.js": "/portfolio/static/js/main.868af670.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.868af670.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.937d5595.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.937d5595.js.map",
-    "static/js/2.6a65b7ef.chunk.js": "/portfolio/static/js/2.6a65b7ef.chunk.js",
-    "static/js/2.6a65b7ef.chunk.js.map": "/portfolio/static/js/2.6a65b7ef.chunk.js.map",
-    "static/js/3.ccbfd45b.chunk.js": "/portfolio/static/js/3.ccbfd45b.chunk.js",
-    "static/js/3.ccbfd45b.chunk.js.map": "/portfolio/static/js/3.ccbfd45b.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.517f0739.css",
+    "main.js": "/portfolio/static/js/main.7be377d8.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/Thesis.pdf": "/portfolio/static/media/Thesis.64947efb3b00547f6fb6.pdf",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.bf584e5989520219889d.jpg",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.88b8d98c1e66b116afd6.pdf",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.04090b244920dfc58c5a82765e854b3f.js": "/portfolio/precache-manifest.04090b244920dfc58c5a82765e854b3f.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.6fbdc45f.chunk.css.map": "/portfolio/static/css/main.6fbdc45f.chunk.css.map",
-    "static/js/2.6a65b7ef.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6a65b7ef.chunk.js.LICENSE.txt",
-    "static/media/Resume.pdf": "/portfolio/static/media/Resume.b95f505d.pdf",
-    "static/media/Thesis.pdf": "/portfolio/static/media/Thesis.c471fdc3.pdf",
-    "static/media/profile.jpg": "/portfolio/static/media/profile.44c4db28.jpg"
+    "main.517f0739.css.map": "/portfolio/static/css/main.517f0739.css.map",
+    "main.7be377d8.js.map": "/portfolio/static/js/main.7be377d8.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.937d5595.js",
-    "static/js/2.6a65b7ef.chunk.js",
-    "static/css/main.6fbdc45f.chunk.css",
-    "static/js/main.868af670.chunk.js"
+    "static/css/main.517f0739.css",
+    "static/js/main.7be377d8.js"
   ]
 }
