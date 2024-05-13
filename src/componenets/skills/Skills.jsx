@@ -14,17 +14,17 @@ function Skills() {
           </h3>
 
           <div className="skill__content">
+          <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
+              HTML/CSS
+            </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
               JavaScript
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
-              CSS
-            </div>
-            <div className="skill__data">
-              <i class="uil uil-check-circle"></i>
-              HTML
+              TypeScript
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
@@ -36,6 +36,10 @@ function Skills() {
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
+              Racket
+            </div>
+            <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
               C
             </div>
             <div className="skill__data">
@@ -44,7 +48,7 @@ function Skills() {
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
-              Racket
+              C#
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
@@ -74,6 +78,10 @@ function Skills() {
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
               Express.js
+            </div>
+            <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
+              Vue.js
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
@@ -113,6 +121,18 @@ function Skills() {
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
+              AWS
+            </div>
+            <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
+              Azure
+            </div>
+            <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
+              Rest API
+            </div>
+            <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
               MongoDB
             </div>
             <div className="skill__data">
@@ -126,10 +146,6 @@ function Skills() {
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
               Docker
-            </div>
-            <div className="skill__data">
-              <i class="uil uil-check-circle"></i>
-              REST API
             </div>
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
@@ -171,6 +187,14 @@ function Skills() {
             <div className="skill__data">
               <i class="uil uil-check-circle"></i>
               Postman
+            </div>
+            <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
+              Selenium
+            </div>
+            <div className="skill__data">
+              <i class="uil uil-check-circle"></i>
+              Appium
             </div>
           </div>
         </div>

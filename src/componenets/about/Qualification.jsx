@@ -70,7 +70,7 @@ function Qualification() {
 
         <div className="qual__data">
           <div>
-            <div className='qual__data__title'>Data Scientist Intern</div>
+            <div className='qual__data__title'>Full Stack Web Developer Intern</div>
             <div className="qual__data__ins">
               <i class="uil uil-map-marker"></i>
               MindBeacon, Toronto
