@@ -2,6 +2,8 @@ import React from 'react'
 import './Footer.css';
 
 function Footer() {
+    const today = new Date();
+
     return (
         <footer className='footer'>
             <div className="footer__container container">
@@ -34,8 +36,9 @@ function Footer() {
                     <a href="https://github.com/GabrielleGaiGai" className="footer__social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="uil uil-github-alt"></i>
                     </a>
-
                 </div>
+
+                <p>Copyright &copy; {today.getFullYear()}</p>
             </div>
         </footer>
 
