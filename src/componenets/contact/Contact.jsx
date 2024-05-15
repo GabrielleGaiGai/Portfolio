@@ -15,19 +15,7 @@ function Contact() {
         const formData = new FormData(e.target);
         formData.forEach((value, key) => { formDataObject[key] = value; });
 
-        if (formDataObject["name"].length === 0) {
-            setSubmitted(true)
-            setMessage("Please input a name.")
-            setTimeout(() => {
-                setSubmitted(false);
-            }, time_out);
-        } else if (formDataObject["email"].length === 0) {
-            setSubmitted(true)
-            setMessage("Please input an email.")
-            setTimeout(() => {
-                setSubmitted(false);
-            }, time_out);
-        } else if (!formDataObject["email"].includes('@')) {
+        if (!formDataObject["email"].includes('@')) {
             setSubmitted(true)
             setMessage("Please input a valid email.")
             setTimeout(() => {
@@ -83,12 +71,12 @@ function Contact() {
                 <form ref={form} onSubmit={sendEmail} className='contact__form'>
                     <div className="contact__box__pair">
                         <label className='contact__box__tag'>Name</label>
-                        <input type="text" name="name" placeholder="Insert your name" className='contact__box__input' />
+                        <input type="text" name="name" placeholder="Insert your name" required className='contact__box__input' />
                     </div>
 
                     <div className="contact__box__pair">
                         <label className='contact__box__tag'>Email</label>
-                        <input type="email" name="email" placeholder="Insert your email" className='contact__box__input' />
+                        <input type="email" name="email" placeholder="Insert your email" required className='contact__box__input' />
                     </div>
 
                     <div className="contact__box__pair">

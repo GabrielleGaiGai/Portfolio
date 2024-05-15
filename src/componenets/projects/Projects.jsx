@@ -9,9 +9,9 @@ function Projects() {
             <h2 className="section__title">Projects</h2>
 
             <div className="projects__container container">
-                {projectsData.map((item, index) => {
+                {projectsData.map((item) => {
                     return (
-                        <Item item={item} key={index} />
+                        <Item item={item} />
                     );
                 })}
 
