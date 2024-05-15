@@ -34,6 +34,10 @@ function Item({ item }) {
             }
         }
         document.body.addEventListener('click', clickAnyelse);
+
+        return () => {
+            document.body.removeEventListener('click', clickAnyelse);
+        }
     }, [])
 
     useEffect(() => {
