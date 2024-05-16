@@ -1,31 +1,20 @@
-import React from 'react';
-import './App.css';
-import Header from './componenets/header/Header';
-import Home from './componenets/home/Home';
-import About from './componenets/about/About';
-import Skills from './componenets/skills/Skills';
-import Projects from './componenets/projects/Projects';
-import Contact from './componenets/contact/Contact';
-import Footer from './componenets/footer/Footer';
-import Scrollup from './componenets/scrollup/Scrollup';
+import { Routes, Route } from 'react-router-dom'
+import Layout from './componenets/layout/Layout';
+import Main from './componenets/Main';
+import ProjectList from './features/projects/ProjectList';
 
 
 function App() {
   return (
-    <>
-      <Header />
-      <main className='main'>
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Main />}></Route>
+        <Route path="projects" element={<ProjectList />}></Route>
+      </Route>
 
-      </main>
-      <Footer />
-      <Scrollup />
-    </>
+    </Routes>
   );
 }
 
 export default App;
+

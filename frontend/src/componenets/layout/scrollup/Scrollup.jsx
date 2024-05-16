@@ -1,4 +1,3 @@
-import React from 'react'
 import './Scrollup.css'
 
 function Scrollup() {
@@ -13,7 +12,7 @@ function Scrollup() {
     });
 
     return (
-        <a href="https://gabriellegaigai.github.io/portfolio/#" className="scrollup" id='scrollup'>
+        <a href="/#" className="scrollup" id='scrollup'>
             <i className="uil uil-angle-double-up scrollup__icon"></i>
         </a>
     )
