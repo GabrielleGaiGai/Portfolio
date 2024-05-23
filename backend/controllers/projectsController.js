@@ -10,11 +10,26 @@ const getAllProjects = asyncHandler(async (req, res) => {
 
 })
 
+const getProjectById = asyncHandler(async (req, res) => {
+    const { projectID } = req.params
+    if (!projectID) {
+        return res.status(400).json({ message: 'ID is required' })
+    }
+
+    const project = await Project.findById(projectID).exec()
+    if (!project) {
+        return res.status(400).json({ message: 'Project not found' })
+    }
+
+    res.status(200).json(project)
+
+})
+
 
 const createNewProject = asyncHandler(async (req, res) => {
-    const { title, summary, languages, tools, description, demo, github, resource} = req.body
+    const { title, summary, languages, tools, description, demo, github, resource } = req.body
 
-    if (!title || !summary || !languages || !tools || !description) {
+    if (!title || !summary) {
         return res.status(400).json({ message: 'Some fields are missing' })
     }
 
@@ -22,16 +37,16 @@ const createNewProject = asyncHandler(async (req, res) => {
     const project = await Project.create(projectObject)
 
     if (project) {
-        res.status(201).json({ message: 'New project created' })
+        res.status(201).json({ project })
     } else {
         res.status(400).json({ message: 'Failed to create new project' })
     }
 })
 
 const updateProject = asyncHandler(async (req, res) => {
-    const { id, title, summary, languages, tools, description, demo, github, resource} = req.body
+    const { id, title, summary, languages, tools, description, demo, github, resource } = req.body
 
-    if (!id || !title || !summary || !languages || !tools || !description) {
+    if (!id || !title || !summary) {
         return res.status(400).json({ message: 'Some fields are missing' })
     }
 
@@ -52,7 +67,7 @@ const updateProject = asyncHandler(async (req, res) => {
     const updatedProject = await project.save()
 
     if (updatedProject) {
-        res.json({ message: 'Project updated' })
+        res.json({ project })
     } else {
         res.status(400).json({ message: 'Failed to update new project' })
     }
@@ -70,8 +85,8 @@ const deleteProject = asyncHandler(async (req, res) => {
     }
 
     await project.deleteOne()
-    res.status(200).json({ message: 'Project deleted' })
+    res.status(200).json(project)
 
 })
 
-module.exports = { getAllProjects, createNewProject, updateProject, deleteProject }
+module.exports = { getAllProjects, createNewProject, updateProject, deleteProject, getProjectById }

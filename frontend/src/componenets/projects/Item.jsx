@@ -25,20 +25,20 @@ function Item({ item }) {
     const detailBox = useRef(0);
     const openProject = useRef(0);
 
-    useEffect(() => {
-        function clickAnyelse(event) {
-            if (!openProject.current.contains(event.target) &&
-                detailBox.current.className.includes("projectItem__box-active") &&
-                !detailBox.current.contains(event.target)) {
-                setToggleState(false);
-            }
-        }
-        document.body.addEventListener('click', clickAnyelse);
+    // useEffect(() => {
+    //     function clickAnyelse(event) {
+    //         if (!openProject.current.contains(event.target) &&
+    //             detailBox.current.className.includes("projectItem__box-active") &&
+    //             !detailBox.current.contains(event.target)) {
+    //             setToggleState(false);
+    //         }
+    //     }
+    //     document.body.addEventListener('click', clickAnyelse);
 
-        return () => {
-            document.body.removeEventListener('click', clickAnyelse);
-        }
-    }, [])
+    //     return () => {
+    //         document.body.removeEventListener('click', clickAnyelse);
+    //     }
+    // }, [])
 
     useEffect(() => {
         const html = document.getElementsByTagName('html')[0]

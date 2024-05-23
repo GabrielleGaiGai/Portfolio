@@ -101,9 +101,12 @@ textarea {
 }
 
 body {
-  /* margin-top: var(--header-height-full); */
   color: var(--text-color);
   background-color: var(--background-color-medium);
+}
+
+main {
+  padding-top: var(--header-height-full);
 }
 
 h1,

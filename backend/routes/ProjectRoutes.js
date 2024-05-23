@@ -8,4 +8,6 @@ router.route('/')
     .patch(projectsController.updateProject)
     .delete(projectsController.deleteProject)
 
+router.route('/:projectID')
+    .get(projectsController.getProjectById)
 module.exports = router

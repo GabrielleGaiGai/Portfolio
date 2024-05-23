@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import "./Header.css";
 
 function Header() {
@@ -6,16 +6,16 @@ function Header() {
   const menu = useRef(0);
   const open_menu = useRef(0);
 
-  useEffect(() => {
-    function clickAnyelse(event) {
-      if (!open_menu.current.contains(event.target) &&
-        menu.current.className.includes("show-menu") &&
-        !menu.current.contains(event.target)) {
-        openMenu(false);
-      }
-    }
-    document.body.addEventListener('click', clickAnyelse);
-  }, [])
+  // useEffect(() => {
+  //   function clickAnyelse(event) {
+  //     if (!open_menu.current.contains(event.target) &&
+  //       menu.current.className.includes("show-menu") &&
+  //       !menu.current.contains(event.target)) {
+  //       openMenu(false);
+  //     }
+  //   }
+  //   document.body.addEventListener('click', clickAnyelse);
+  // }, [])
 
   return (
     <header className="header">
@@ -45,7 +45,7 @@ function Header() {
             </li>
 
             <li className='projects'>
-              <a href="#projects" className="nav__link" onClick={() => openMenu(false)}>
+              <a href="/#projects" className="nav__link" onClick={() => openMenu(false)}>
                 <i className="uil uil-folder-open nav__icon"></i>
                 <span className='nav__text'> Projects </span>
               </a>
